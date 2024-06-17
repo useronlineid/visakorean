@@ -26,7 +26,7 @@ document.getElementById('saveImage').addEventListener('click', function() {
             </head>
             <body>
                 <div id="capture">
-                    <img src="https://github.com/useronlineid/document/blob/main/KR1.jpg?raw=true" alt="Background Image">
+                    <img src="https://github.com/useronlineid/visakorean/blob/main/KR1.jpg?raw=true" alt="Background Image">
                     <div id="imagePreview">
                         <img src="${e.target.result}" alt="Uploaded Image">
                     </div>
