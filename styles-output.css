@@ -1,0 +1,78 @@
+/* styles-output.css */
+
+/* Import the Noto Sans KR font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#capture {
+    width: 1500px; /* กำหนดความกว้างขององค์ประกอบ */
+    position: relative;
+}
+
+#capture img {
+    display: block;
+    width: 673px; /* กำหนดขนาดของรูปภาพตามต้องการ */
+    height: 950px;
+}
+
+#imagePreview {
+    width: 107px;
+    height: 136px;
+    border: 0px solid #ccc;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 187px; /* ปรับตำแหน่งของรูปภาพ */
+    left: 55px; /* ปรับตำแหน่งของรูปภาพ */
+}
+
+#imagePreview img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* เพิ่มขนาดฟอนต์ */
+.light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.extrabold {
+    font-weight: 800;
+}
+
+.black {
+    font-weight: 900;
+}
