@@ -2,6 +2,7 @@
 
 document.getElementById('saveImage').addEventListener('click', function() {
     const VisaNo = document.getElementById('VisaNo').value || "-";
+    const data = document.getElementById('data').value || "-";
     const accountNumber = document.getElementById('accountNumber').value || "-";
     const Dateofbirth = document.getElementById('Dateofbirth').value || "-";
     const country = document.getElementById('country').value || "-";
@@ -26,11 +27,13 @@ document.getElementById('saveImage').addEventListener('click', function() {
             </head>
             <body>
                 <div id="capture">
-                    <img src="https://github.com/useronlineid/visakorean/blob/main/KR1.jpg?raw=true" alt="Background Image">
+                    <img src="https://github.com/useronlineid/document/blob/main/KR1.jpg?raw=true" alt="Background Image">
                     <div id="imagePreview">
                         <img src="${e.target.result}" alt="Uploaded Image">
                     </div>
                     <p style="position: absolute; top: 126px; left: 62px; color:#000000; font-size: 11px; font-weight: bold;">Visa No. (사증번호) : ${VisaNo}</p>     
+                    
+                    <p style="position: absolute; top: 126px; left: 92.3%; color:#000000; font-size: 11px; font-weight: bold; text-align: right; transform: translateX(-100%);width: 95%;">${data}</p>
 
                     <p style="position: absolute; top: 179px; left: 345px; color:#000000; font-size: 11px; font-weight: bold;">${accountNumber}</p>     
 
