@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Kanit', sans-serif;
-    background: linear-gradient(135deg, #e0f7e9, #a5d6a7);
+    background: #40515e;
     color: #333;
     margin: 0;
     padding: 0;
@@ -13,6 +13,7 @@ body {
     align-items: center;
     height: 100vh;
     transition: background-color 0.5s;
+    overflow-y: auto;
 }
 
 .container {
@@ -23,6 +24,8 @@ body {
     width: 320px;
     max-width: 100%;
     transition: all 0.3s ease;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .container:hover {
@@ -76,36 +79,4 @@ button {
 button:hover {
     background-color: #2e7d32;
     transform: translateY(-2px);
-}
-
-.input {
-    color: #828282;
-    font-size: 18px;
-    margin: 5px 0;
-}
-
-#output6 {
-    color: red;
-    font-size: 18px;
-}
-
-#imagePreview {
-    width: 390px;
-    height: 500px;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-    position: relative;
-}
-
-#imagePreview img {
-    max-width: 100%;
-    max-height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
